@@ -1,0 +1,38 @@
+CSS: Cascading Style Sheet 
+
+What:   Dokument ku deklarohet stilimi i elementeve
+Why:    Per ta zbukuruar faqen
+How:    
+        1. Krijojme nje file(dokument) me prapashtese '.css' brenda folderit(dosjes) ku ndodhet index.html
+        2. Bejme lidhjen HTML <-> CSS
+            <link rel="stylesheet" href="styles.css" />
+        3. Selektojme elementin qe do stilojme
+            3a. Select by tag
+            3b. Select by class [me e perdorura ne praktike]
+            3c. Selectimi me id
+        4. Vendosim stilimin
+
+
+
+Extra: top 5 extention per VS code, 
+       top 15 keyboard shortcuts for vs code
+
+
+Rradha e punes:
+1. Ndajme elementet ne kontenier
+2. vendosim elementet ne html
+3. stilojme ne css
+    3a. Layout -> Vendosja e elementeve
+        3a.a Ndarja ne kontenier 
+        
+        3a.b WIDTH 
+                Element: 
+                    block elements: 
+                        zene te gjithe hapsiren width: 100% by default
+                        mund tju ndryshohet width
+                    inline elements: zene aq hapsire sa ju duhet
+                        nuk mund tju ndryshohet width
+                    inline-block
+        3a.c Spacing
+        3a.d Positioning
+                

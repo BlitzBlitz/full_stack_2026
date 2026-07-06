@@ -1,0 +1,14 @@
+.main-container {
+  border: 3px solid red;
+  height: 95vh;
+  /* width; */
+  /* padding/ margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  border: 3px solid blue;
+}

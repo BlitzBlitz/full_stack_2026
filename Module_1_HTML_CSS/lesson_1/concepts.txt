@@ -1,0 +1,39 @@
+Internet
+    what:   lidhja e 2 ose me shume kompjuterave
+    why:    per te shkembyer informacione
+    how:    me kabull LAN 
+WEB
+    what:   nje grumbull dosjesh(folderash)[website] te lidhur me njeri tjetrin
+    why:    per te shkembyer informacione
+    how:    
+HTML
+    what:   Gjuha qe kuptojne shfletuesit e webit
+    why:    Per tu marre vesh kur lundrojme ne Internet
+    how:
+            HTML eshte gjuha e etiketave <tag>
+            Cdo infromacion qe do percillet duhet te specifikohet se cfare eshte
+                <title>Faqa e Xhamise se Namazgjase</title>
+                <p>Kjo xhami eshte ndertuar ne vitin 2020 ..... </p>
+
+
+Etikat.  <emer-etikete> </emer-etikete>
+    what    mjete qe i tregojne shfletuesit se cfare lloji eshte informacioni qe po shperndajme
+    why     per te treguar LLOJIN e informacionit
+    how     
+            hapese dhe mbyllese ||| hapese
+
+
+
+Atributet:   emer-atributi="vlere"  ->  href="http://google.com" , target="_blank"
+    what    mjete qe i tregojne shfletuesit detaje shtese mbi LLOJIN e informacionit qe po shperndajme
+    why     per ta pershkruar me mire informacionin qe po shperndajme
+    how
+            atributet vendosen tek tagu hapes
+                <a href=",,,,,"> </a>
+
+            nje etikete mund te kete me shume se 1 atributet
+                <a href=",,,,," target="_blank"> </a>
+
+Website dhe webpage
+
+DSH: Si gjendet dosja qe ne kerkojme ne shfletuesin e webit 

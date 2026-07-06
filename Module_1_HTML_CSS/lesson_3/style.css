@@ -1,0 +1,30 @@
+.main-container {
+  border: 3px solid red;
+}
+
+.nav-bar {
+  border: 3px solid blue;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  border: 3px solid black;
+  display: flex;
+}
+.menu {
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+}
+.main {
+  border: 3px solid blue;
+  padding: 4em;
+}
+
+.content {
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+}
