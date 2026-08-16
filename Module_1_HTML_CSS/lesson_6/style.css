@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent-container {
+  border: 3px solid red;
+  min-height: 100vh;
+  display: flex;
+}
+
+.child-1 {
+  border: 3px solid rgb(179, 255, 0);
+  background-color: rgb(102, 102, 255);
+  margin: 1em;
+  width: 50%;
+  min-height: 100vh;
+}
+
+.child-2 {
+  border: 3px solid rgb(179, 255, 0);
+  background-color: rgb(102, 102, 255);
+  margin: 1em;
+  width: 50%;
+  min-height: 100vh;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+  .parent-container {
+    flex-direction: column;
+  }
+  .child-1 {
+    background-color: rgb(12, 220, 26);
+    width: 100%;
+  }
+  .child-2 {
+    background-color: rgb(12, 220, 26);
+
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1020px) {
+  .parent-container {
+    flex-direction: column;
+  }
+  .child-1 {
+    background-color: rgb(220, 106, 12);
+    width: 100%;
+  }
+  .child-2 {
+    background-color: rgb(220, 106, 12);
+
+    width: 100%;
+  }
+}

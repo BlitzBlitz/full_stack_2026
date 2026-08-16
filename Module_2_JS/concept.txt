@@ -1,0 +1,123 @@
+1. Javascript
+        What? eshte gjuhe programimi
+        Why?  Per automatizim te procesece Manual -> Automatic (Dinamike)
+        How?
+                Problemi: Search
+
+                Input:[RAM/ROM]              fjala kyce
+                Calculations:       lexo cdo titullin e cdo elementi
+                [Operatoret]        per cdo element -> kontrollo nese titulli permban fjalen kyce
+                                    nese e permban -> ruaje elementin ne nje liste
+                                    kalo tek elementi tjeter
+                OutPut:[RAM/ROM]    elementet qe permbajne fjalen kyce
+
+2. Konceptet baze te gjuheve te programimit
+        
+        1. Ruaj/Lexo te dhena       RAM (Memory) / ROM(HDD/SSD)  
+        2. Llogaritje               operatore / funksione
+
+        Marrja e inputit 
+        1. input() -> lexon te dhena nga perdoruesi
+        2. e ruajme ne nje variabel 
+
+3. Tipet e dhenave:
+        number
+        string
+        boolean
+        object
+        undefined
+    Konvertimi 
+        
+4. Variablat 
+        What?   Kuti boshe ne RAM 
+        Why?    Per te ruajtur vlera    [Infromation is GOLD]
+        How?    
+                Deklarimi i  variablave:
+                int age;
+                age = 25;
+                age = 'njezet e pese'; 
+5. Operatoret
+        1. Aritmetike: +, -, *, /, %
+            What?   funksione primitive 
+            Why?    Per te bere llogaritje matematikore
+            how?   a + b, a - b, a * b, a / b, a % b (kthen pjesen e mbetur te pjestimit) 5 % 2 = 1
+        2. Krahasimi: ==, !=, >, <, >=, <=
+            What?       funksione primitive qe sherbejn per te krahasuar 2 vlera
+            why?        per te formuar kushte           
+            how?
+                        4 < 10          => true
+                        "Anna" < "Ben"  => true         strcmp("Anna", "Ben")
+
+                        let age1 = 40;
+                        let age2 = 50;
+                        let condititon_result = age1 > age2     => false
+
+
+
+        3. Logjike: &&, ||, !
+
+6.  Fjalia Kushtore
+        What?   instruksion qe detyron kompjuterin te ekzekutoj kodin vetem nese
+                        plotesohet kushti
+        Why?    Kompjuteri ekzekuton cdo kod pa kusht 
+        How?
+                1. "if"         -> keyword (fjale kyce e gjuhes)
+                2. (kushti)     -> kushtezon ekzekutimin e kodit qe ndodhet ne trup
+                3. {trupi}      -> kodi qe do ekzekutohet vetem nese kushti eshte
+                                                i vertet
+
+                Kushtet:
+                        1. Te thjeshte -> me 1 operator krahasimi
+                        2. Te perbere -> me 2 ose me shume operator krahasimi 
+                                                dhe operator logjik
+                                                user == "admin" && password == "admin1234"
+
+7. Fjalia Perseritese
+        what?   Fjali kushtore + perseritje
+        why?    per te perseritur nje grup instruksionesh/komandash
+        how?
+                A.  2 Kategori ciklesh:
+                        Cikle te percaktuar
+                                Numri i perseritjeve: 
+
+                                piken e fillimit:
+                                piken e mbarimit:
+                                hapin:
+                        Cikle te papercaktuar
+                                piken e mbarimit: -1
+
+                B. Vlerat qe ndyshojne gjate perseritjes:
+                        Deklarojme vleren si variabel jasht ciklit
+                        perdorim vleren (printim, index, ...)
+                        ndryshojme vleren per hapin e rradhes
+8. Arrays
+        what?   varaibla qe ruajne me shume se 1 vlere
+        why?    per te ruajtur nje grup vlerash(te te njejtit tip)
+        how?    
+                A. deklaritimi:
+
+                        let student_score;   ==> let class_scores = [12,45,70,100]
+
+                B.Selektimi i elementeve:
+
+                        let counter = 0;
+                        let index = 0;
+                        while (counter < class_scores.length) {
+                                console.log(class_scores[index]);
+                                index++;
+                                counter++;
+                        }
+
+                C. Shtimi i elementeve
+                        class_scores.push(56)
+                
+                D. Fshirja e elementeve
+                        class_scores.pop()
+                        class_scores.splice(index,amount)
+
+                E. Operacionet kryesore me Array
+                        1. max, min, sum, avg 
+                        2. kopjojm arrayn ne nje array te ri
+                                shallow-copy
+                                hard-copy
+
