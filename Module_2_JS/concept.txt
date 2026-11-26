@@ -13,7 +13,7 @@
 
 2. Konceptet baze te gjuheve te programimit
         
-        1. Ruaj/Lexo te dhena       RAM (Memory) / ROM(HDD/SSD)  
+        1. Ruaj/Lexo te dhena       RAM (Memory) / ROM(HDD/SSD)(Storage)
         2. Llogaritje               operatore / funksione
 
         Marrja e inputit 
@@ -43,10 +43,11 @@
             how?   a + b, a - b, a * b, a / b, a % b (kthen pjesen e mbetur te pjestimit) 5 % 2 = 1
         2. Krahasimi: ==, !=, >, <, >=, <=
             What?       funksione primitive qe sherbejn per te krahasuar 2 vlera
-            why?        per te formuar kushte           
+            why?        per te formuar kushte te thjeshte          
             how?
                         4 < 10          => true
                         "Anna" < "Ben"  => true         strcmp("Anna", "Ben")
+                        "Anna" < "Annastasia" => true
 
                         let age1 = 40;
                         let age2 = 50;
@@ -55,6 +56,13 @@
 
 
         3. Logjike: &&, ||, !
+                what?   funksione primitive qe sherbejn per te formuar kushte te perbera
+                why?    per te formuar kushte te perbera
+                how?
+                        let user = "admin";
+                        let password = "admin1234";
+                        let condition_result = user == "admin" && password == "admin1234"
+
 
 6.  Fjalia Kushtore
         What?   instruksion qe detyron kompjuterin te ekzekutoj kodin vetem nese
@@ -92,7 +100,7 @@
                         ndryshojme vleren per hapin e rradhes
 8. Arrays
         what?   varaibla qe ruajne me shume se 1 vlere
-        why?    per te ruajtur nje grup vlerash(te te njejtit tip)
+        why?    per te ruajtur nje grup elementesh(te te njejtit tip)
         how?    
                 A. deklaritimi:
 
@@ -120,4 +128,94 @@
                         2. kopjojm arrayn ne nje array te ri
                                 shallow-copy
                                 hard-copy
+9. Objektet
+        what    variables that can store many properties for 1 element
+        why     for better managing the data
+        how     
+                Deklarimi:
+                        let student = {}
+                        let student = {
+                                name: 'Ben',
+                                age: 15,
+                                avg_grade: 7.5,
+                                is_active: true,
+                                gender: 'M',
+                                math_grades: [10, 9, 8, 7, 6],
+                                address: {
+                                        city: 'Tirane',
+                                        street: 'Rruga e Durresit',
+                                        number: 12
+                                }
+                        }
+                Selecting a property:
+                        student.name
+                Adding a new property:
+                        student.phone = '0674030405'
+                Deleting a property:
+                        del student.phone
+10. Fuksionet
+        what    mini-programe brenda programit tone 
+        why     per te mos perseritur veten (write once use twice)
+        how     
 
+                Deklarimi(4 pjese):
+                        a. fjala kyce 'function'
+                        b. emrin i funksionit (duhet te filloi me folje)
+                        c. lista e argumenteve (input)
+                        d. trupi (instruksionet)(cal)
+
+                        e. return (output)
+
+
+                Thirrja:
+                        
+
+                Hack:   Funksionet kthjene pergjigje vetem 1 here, sepse RETURN -> MBYLL funksionin
+
+                        Kur duhet te kthejeme me shume se 1 element:
+                                a. krijojme 1 array bosh
+                                b. vendosim elementet qe duam te kthejme ne kte array
+                                c. kthejme(return) kte array 
+
+
+
+11. DOM (Document Object Model)
+        What? nje objekt qe permban te gjitha elementet HTML e nje faqe web
+        Why? per te modifikuar(shtojm, heqim, ndryshojm, lexojm) elementet HTML nga Javascript
+        how? 
+                1. Selektimi i elementeve HTML
+                        a. querySelector('css_selector')
+                                "#my_id" -> selekton elementin me id=my_id
+                                ".my_class" -> selekton elementet me class=my_class
+                                "h1" -> selekton elementet me tagname=h1
+                        b. querySelectorAll('css_selector')
+
+                2. Modifikimi i elementeve text te HTML (h1, p, span)
+                        a. innerHTML
+                        b. innerText
+12. Nga DATA ne HTML
+        1. ruajm te dhenat ne nje array 
+        2. selektojme CONTAINERIN ku do te shfaqen keto te dhena
+        3. krijojme funksionin qe shfaq(krijon elemente HTML te nevojshem per pamjen e ketij element)
+                        vetem 1 element  
+                //in    te dhenat e elementit
+                //cal   krijojme nje div
+                //      vendosim brenda div te gjithe element html qe duam te shfaqim
+                //      vendosim te dhenat brenda element HTML te krijuar
+                //out   objektin HTML te krijuar
+        
+        4. therrasim funksionin per cdo element te arrayt
+        5. vendosim elementet e krijuar ne containerin e selektuar me appendChild()
+
+13. Krijimi i nje elementi HTML me Javascript
+        1. krijojme nje element HTML me document.createElement('tagname')
+        2. vendosim vlera brenda ketij elementi me innerHTML ose innerText
+        3. vendosim kete element ne nje container me appendChild()
+
+14. Krijimi i elementeve HTML me funksion:
+        1. krijojme 1 div bosh + i vendosim klasat css
+        2. vendosim brenda ktij divi te gjithe elementet qe na duhen
+                        .innerHTML = 
+                        + template string ``
+        3. Vendosim te dhenat duke perdorur ${variabla} brenda innerHTML
+        4. kthjem (return) kete div te krijuar
